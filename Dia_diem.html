@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<style>
+   .sub-header{
+         margin: 10px 10px ;    
+    }
+    .logo img {
+        width: 70px;
+        height: 60px;
+        display: flex;
+    }
+    .title{
+        padding-left: 900px;
+    }
+    .menu{
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        padding: 20px 0px;
+        background-color: #013a7c;
+        color: white;
+    }
+    .menu li{
+        width: 100%
+    }
+    .sub-menu{
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+    }
+    .sub-menu:hover{
+        color: rgb(70, 175, 117);
+    }
+    .review {
+        display: flex;
+    }
+    .content {
+        flex-basis: 70%;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        gap: 10px;
+        height: 350px;
+    }
+    .container-column {
+        width: 30%;
+        flex-basis: 30%;
+        border-radius: 10px;
+        padding: 20px 12px;
+       
+    }
+    .container-column img {
+        width: 100%;
+        width: 200px;
+        height:120px;
+        box-shadow:  0 0 15px 0px;
+    }
+    .box {
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        gap: 10px;
+        height:400px;
+        
+    }
+    .box-row {
+        width: 30%;
+        flex-basis: 30%;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+
+    }
+    .box-row img {
+        width: 100%;
+        width: 200px;
+        height:120px;
+        box-shadow:  0 0 15px 0px;
+    }
+    .contain {
+        display: flex;
+        justify-content:space-between;
+    }
+    .contain-col {
+        flex-basis: 30%;
+        background: rgba(10, 108, 141, 0.158);
+        border-radius: 25px;
+        padding: 20px 12px;
+    }
+    table {
+        background:  rgba(10, 108, 141, 0.158);
+    }
+    th {
+        background:  #013a7c96;
+    }
+    th, td {
+        padding: 20px 25px;
+    }
+    table,th, td{
+        border-bottom: 1px solid #3333335f;
+   
+    } 
+    .main p {
+        font-size:18px;  
+    } 
+    .main h1{
+        font-size: 40px; 
+    }
+    h1 {
+        text-align: center;
+        color: #013a7c;
+
+    }
+    h2, h3{
+        text-align: center;
+        font-weight: 550;
+    }
+    .content h3:hover{
+        color: rgb(70, 175, 117);
+    }
+    .font-footer {
+        display: flex;
+        width: 98%;
+        height: 320px;
+        background-color:#013a7c;
+        text-align: center;
+        gap: 15px;
+        font-size:15px;               
+        color: whitesmoke; 
+        padding-right: 2%;
+    }
+    .bottom {
+        width: 100%;
+    }
+</style>
+<body>
+    <aside class="sub-header">
+        <div class="logo" >
+            <img src="./quyn/logoo.jpg" alt="logo">
+            </div>
+        <form class="title">
+            <input type="text" placeholder="Search"/>
+            <input type="submit" value="Log in" />
+        </form> 
+        <header >
+            <ul class="menu">
+                <li><a href="./Trang_chu.html"><i class="fa-solid fa-bars"></i></a></li>
+                <li>
+                    <a class="sub-menu" href="./Am_thuc.html">Ẩm thực</a>
+                </li>
+                <li>
+                    <a class="sub-menu" href="./Dia_diem.html">Địa điểm</a>
+                </li>
+                <li>
+                    <a class="sub-menu" href="./Noi-o.html">Nơi ở</a>
+                </li>
+                <li>
+                    <a class="sub-menu" href="">Book now</a>
+                </li>
+            </ul>        
+        </header>
+    </aside>
+    <div class="main">
+        <h1>Sức hấp dẫn của các địa điểm tham quan Đà Nẵng hiện nay</h1>
+        <p>Đà Nẵng không chỉ được biết đến với cái tên là thành phố xanh-sạch-đẹp hay thành phố đáng sống mà còn là thành phố du lịch của miền Trung và của cả nước.
+           Với lợi thế có vị trí thuận lợi, hệ thống giao thông hạ tầng phát triển cùng tiềm năng du lịch phong phú và nhiều tài nguyên có giá trị,… Du lịch Đà Nẵng đã phát triển thành nhiều loại hình phục vụ du khách, thu hút hàng triệu lượt khách mỗi năm.</p>
+        <img src="./quyn/rong1.jpg" alt="danang"  width="100%" height="450">
+    </div>
+    <h1>TOP CÁC ĐỊA ĐIỂM NỔI TIẾNG</h1>
+    <div class="review">
+        <section class="content">
+            <div class="container">
+                <div class="container-column">
+                    <img src="./quyn/banahiu.webp" alt="danang">
+                    <h3>Bà Nà Hills</h3>
+                    <p>
+                        Bà Nà Hills được biết đến là khu du lịch trên núi hàng đầu Việt Nam với những cái tên mỹ miều như: “đường lên tiên cảnh”, “hòn ngọc khí hậu” hay “lá phổi xanh của miền Trung”… trở thành địa điểm trong mơ của bao người.
+                </div>
+                <div class="container-column">
+                    <img src="./quyn/bandaosontra.webp" alt="danang">
+                    <h3>Bán Đảo Sơn Trà</h3>
+                    <p>
+                        Bán Đảo Sơn Trà là công trình mới với quy mô lớn nhất trong loạt Chùa Linh Ứng trứ danh Đà Thành, được UNESCO công nhận là tượng Quán Thế Âm cao nhất Đông Nam Á.
+                    </p>
+                </div>
+                <div class="container-column">
+                    <img src="./quyn/caubantay.png" alt="danang">
+                    <h3>Cầu Bàn Tay</h3>
+                    <p>
+                        Kiến trúc “vô tiền khoáng hậu” ấn tượng của Cầu Vàng Ba Na Hills kết hợp với thiên nhiên hùng vĩ của đỉnh Bà Nà giúp những bức ảnh check in của du khách trở nên cực kỳ “chanh sả”, ấn tượng. 
+                    </p>
+                </div>
+                <div class="container-column">
+                    <img src="./quyn/cacheprong.jpg" alt="danang">
+                    <h3>Cá Chép Hóa Rồng</h3>
+                    <p>
+                        Tượng cá chép hóa rồng mô phỏng theo bức tượng sư tử biển của Singapore. Sự có mặt của nó như tô điểm cho cảnh quan, đồng thời đã trở thành biểu tượng mới của thành phố đáng sống. 
+                </div>
+            </div>
+           <div class="box">
+                <div class="box-row">
+                    <img src="./quyn/congvien.webp" alt="danang">
+                    <h3>Công Viên Châu Á</h3>
+                    <p>
+                      Công Viên Châu Á Đà Nẵng tái hiện 10 nền văn hoá khác nhau tại Châu Á, mang đến cho bạn những trải nghiệm du lịch và trò chơi đầy cảm xúc. Đó có thể là giây phút “hú hồn” với trò chơi cảm giác mạnh Singapore Sling.
+                    </p>
+                </div>
+                <div class="box-row">
+                    <img src="./quyn/suoikhoang.webp" alt="danang">
+                    <h3>Công Viên Suối Khoáng</h3>
+                    <p>
+                       Trải rộng hơn 60 héc-ta giữa đồng núi trập trùng và rừng nguyên sinh trù phú, Công Viên Suối Khoáng Nóng Núi Thần Tài chính là “nhà chung” của loạt hồ nước châm cứu, hệ thống suối thiên nhiên bao gồm cả suối nước nóng dồi dào khoáng chất. 
+                    </p>
+                </div>
+                <div class="box-row">
+                    <img src="./quyn/Vinpearl-Land.jpg" alt="danang">
+                    <h3>Vinpearl-Land</h3>
+                    <p>
+                        Du khách tới đây sẽ được đắm chìn trong không gian giữa quá khứ và hiện tại tại bến cảng giao thoa. Tha hồ thử sức với vô vàn trò chơi cảm giác mạnh. Đặc biệt là đi thuyền trên sông khám phá vườn thú độc đáo…
+                    </p>
+                </div>
+                <div class="box-row">
+                    <img src="./quyn/cautinhyeu.jpg" alt="danang">
+                    <h3>Cầu Tình Yêu</h3>
+                    <p>
+                        Nó được mô phỏng theo những cây cầu tình yêu nổi tiếng của các nước trên thế giới như Nga, Pháp, Hàn Quốc, Ý,… Đây là nơi như chứng minh và lưu giữ tình yêu của các cặp đôi mỗi lần đến tham quan tại Đà Nẵng.
+                    </p>
+                </div>
+            </div>
+    <h1>PHƯƠNG TIỆN DI CHUYỂN</h1>
+    <div class="contain">
+        <div class="contain-col">
+            <h2>Máy Bay</h2>
+            <p>
+                Di chuyển bằng máy bay chính là lựa chọn của đa số du khách đến Đà Nẵng vì thuận tiện, di chuyển nhanh chỉ mất hơn 1 giờ đồng hồ. Sân bay Đà Nẵng là cảng hàng không lớn nhất của khu vực miền Trung có quy mô lớn thứ ba của Việt Nam, sau sân bay Tân Sơn Nhất (Hồ Chí Minh) và sân bay Nội Bài (Hà Nội).
+            </p>
+        </div>
+        <div class="contain-col">
+            <h2>Xe Khách</h2>
+            <p>
+                Việc sử dụng xe khách đi Đà Nẵng yêu cầu du khách phải có một sức khỏe tốt để có thể ngồi trên xe di chuyển đường dài. Khác với du lịch Đà Nẵng bằng máy bay hay tàu hỏa, bến xe khách Đà Nẵng nằm ngay trung tâm thành phố nên khi bạn chọn di chuyển bằng phương tiện này thì lúc đến nơi sẽ tiện hơn cho bạn khi di chuyển thẳng đến khách sạn đã đặt.
+            </p>
+        </div>
+        <div class="contain-col">
+            <h2>Tàu Hỏa</h2>
+            <p>
+                Ga Đà Nẵng là điểm dừng quan trọng trong hành trình của các chuyến tàu Bắc-Nam. Thời gian di chuyển bằng tàu hoả đến Đà Nẵng thường mất từ 14 đến 20 tiếng. Đi bằng tàu hỏa khá thoải mái nên du khách hoàn toàn có thể tận hưởng chuyến đi trên những toa tàu được trang bị tiện nghi.
+            </p>
+        </div>
+    </div>
+  </section>
+    <aside class="sidebar">
+        <h1>Có thể bạn quan tâm</h1><hr>
+        <table>
+            <tr>
+                <th>Cẩm nang du lịch</th>
+                </tr>
+                <tr>
+                   <td>Kinh nghiệm khi đi Đà Nẵng</td>
+                </tr>
+                <tr>
+                   <td>Thuê xe di chuyển</td>
+                </tr>
+                <tr>
+                   <td>Tour Bà Nà Hill</td>
+                </tr>
+                <tr>
+                   <td>Tour Hội An</td>
+                </tr>
+                <tr>
+                   <td>Tour Núi Thần Tài</td>
+                </tr>
+                <tr>
+                   <td>Tour Bán Đảo Sơn Trà</td>
+                </tr>
+                <tr>
+                   <td>Tour Cù Lao Chàm</td>
+                </tr>
+                <tr>
+                    <td>Bãi biển Mỹ Khê</td>
+                </tr>
+                <tr>
+                    <td>Chùa Linh Ứng</td>
+                </tr>
+                <tr>
+                    <td>Chợ đêm Helio</td>
+                </tr>
+            </table>
+        </div>
+    </aside>
+</div>
+</body>
+<footer>
+    <br>
+    <br>
+    <div class="font-footer">
+       <div class="bottom">
+            <h3>Về chúng tôi</h3>
+            <p>Giới thiệu</p>
+            <p>An toàn-Bảo mật</p>
+            <p>Điều khoản điều lệ</p>
+            <p>Chính sách quyền riêng tư</p>
+            <p>Blog</p>
+            <p>Liên hệ</p>
+            <p>Hỏi đáp</p>
+        </div>
+       <div class="bottom"> 
+            <h3>Dịch vụ nổi bật</h3>
+            <p>Đặt khách sạn</p>
+            <p>Vé máy bay</p>
+            <p>Vay nhanh</p>
+       </div>
+       <div class="bottom"> 
+            <h3>Chăm sóc khách hàng</h3>
+            <p>Địa chỉ: Đức Thắng, Hà Nội</p>
+            <p>Hotline: 000000000 (1000 đ/phút)</p>
+            <p>Email: xxx@gmai.com</p>
+            <p>Tổng tài gọi ra:098xxx-xxx789xx</p>
+       </div>
+       <div class="bottom">
+            <h3>Hợp tác doanh nghiệp</h3>
+            <p>Hotline:00xxx456</p>
+            <p>Email:xxx@gmail.com</p>
+            <p>Website:woderlan.vn</p>
+            <img style="width:40%" src="./quyn/hoptac.png" alt="anh">
+         </div>
+        <div class="bottom">
+            <h3>Kết nối với chúng tôi</h3>
+            <img style="width:20%" src="./quyn/fb.png" alt="anh">
+            <img style="width:20%" src="./quyn/inta.png" alt="anh">
+            <img style="width:20%" src="./quyn/youtobe.png" alt="anh">
+            <br>
+            <br>
+            <br>
+            <h3>Tải ứng dụng trên điện thoại</h3>
+            <img style="width:40%" src="./quyn/gg.png" alt="anh">
+            <img style="width:40%" src="./quyn/appsto.png" alt="anh">
+        </div>
+    </div>
+</footer>
+</html>

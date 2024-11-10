@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đà Nẵng Travel</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        
+        .logo{
+            width:5%;
+            
+        }
+        .login{
+            border-radius: 7px;
+            border-style: groove;
+            border-color: rgb(239, 247, 247);
+        }
+        .login-mg{
+            margin-left: 3px;
+            
+        }
+        .login:hover{
+            background-color: rgb(151, 194, 214);
+        }
+        .nb-menu{
+            display: flex;
+            list-style-type: none;
+           
+            padding: 10px 10px;
+            margin-bottom: 0px;
+            color:white;
+            background-color: #013a7c;
+            
+        }
+        .nav-item{
+            width: 100%;
+            text-align: center;
+            
+        }
+        .sub-menu{
+            text-decoration: none;
+            font-weight: bolder;
+            color:white;
+        }
+        .system{
+            display: flex;
+        }
+        .w-70{
+            width:70%;
+        }
+        .s-w-30{
+            width:30%;
+            background-color: rgb(184, 205, 233);
+            padding: 1rem 1rem;
+            
+        }
+        .title-between{
+            text-align: center;
+            padding: 4% 2%;
+            
+        }
+        .sp-color{
+            padding: 10px 10px;
+            background-color: rgb(234, 235, 236);
+            color: rgb(85, 85, 136);
+            
+        }
+        
+        .content{
+            display: flex;
+            text-align: center;
+            padding-bottom: 30px;
+            line-height: 40px;
+        }
+        
+        .content img{
+            width: 80%;
+            border-radius: 7px;
+            
+        }
+        .item-left{
+            
+            color: rgb(66, 86, 141);
+            font-style: italic;
+        }
+        .w-260{
+            width: 260%;
+        }
+        .item-left:hover{
+            font-weight:bold ;
+            color:rgb(7, 24, 100);
+        }
+        .items{
+            
+            color: rgb(66, 86, 141);
+            font-style: italic;
+        }
+        .w-250{
+            width: 250%;
+        }
+        .items:hover{
+            font-weight:bold ;
+            color:rgb(7, 24, 100);
+
+        }
+
+        .article{
+            
+            padding: 0px 30px;
+            line-height: 2;
+        }
+        .article img{
+            width: 100%;
+            border-radius: 7px;
+        }
+        .list{
+            font-style: italic;
+        }
+        .info{           
+            padding-top:20px;
+            font-style: italic;
+        }
+        .info a{
+            text-decoration: none;
+
+        }        
+        .info a:hover{
+            color:rgb(7, 24, 100);
+        }
+        .photo{
+            width: 100%;
+            border-radius: 2rem;
+            padding: 1rem 1rem;
+            
+        }
+        .h-center{
+            text-align: center;
+        }
+        .font-color{           
+            color:rgb(7, 24, 100);
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+        
+        .colum{
+            width:100%;
+        }
+        .font-footer {     
+            border: 1px;
+            padding: 50px 50px 150px 0px;
+            display: flex;
+            width: 100%;
+            /* height: 300px; */
+            background-color:#013a7c;
+            /* justify-content: center; */
+            text-align: center;
+            gap: 10px;
+            font-size:12px;               
+            color: whitesmoke;
+        }
+        @media(max-width: 480px){
+            .container-fluid{
+                position:fixed;
+                background-color: #013a7c;
+                top:0;
+                width: 100%;
+            }
+            .system {
+                display: block;
+            }    
+            .nb-menu{
+                padding-top: 70px;
+            }
+            .content{
+                display: block;
+                text-align: center;
+                width: 38%;
+            }
+            
+            
+            .dis{
+                display: none;
+            }
+            
+            .logo{
+                width:20%;
+            }
+            
+            .w-70{
+                width: 100%;
+                padding: 10px 0px;
+            }
+            
+            .s-w-30{
+                width: 100%;
+                
+            }
+            
+            .font-footer{
+                display: none;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+        <aside class="sub-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <img class="logo" src="./picture/le.png" >
+                    <form class="d-flex">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <button class="login login-mg" type="button" >Login</button>
+                    </form>
+                </div>
+                
+            </nav>
+            <header>
+                <ul class="nb-menu">
+                    <li class="nav-item "><a class="sub-menu" href="./Trang_chu.html"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="nav-item ">
+                        <a class="sub-menu" href="./Am_thuc.html">Ẩm thực</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sub-menu" href="./Dia_diem.html">Địa điểm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sub-menu" href="./Noi-o.html">Nơi ở</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sub-menu" href="">Book now</a>
+                    </li>
+                </ul>
+            </header>
+        </aside>
+        
+        <div class="system ">
+            
+            <div class="w-70">
+                <img class="colum dis" src="./quyn/banahiu.webp">
+                <section class="text-cent">
+                    <div class="title-between">
+                        
+                        <span class="login login-mg sp-color" >Popular Activities</span>
+                    </div>
+                    <div class="content">
+                        <div class="item-left w-260">
+                            <img src="./picture/sea.jpg">
+                            <p>Sea</p>
+                            
+                        </div>
+                        <div class="items w-250">
+                            <img src="./picture/experience.jpg">
+                            <p>Experience</p>
+                            
+                        </div>
+                        <div class="items w-250">
+                            <img src="./picture/traditional.jpg">
+                            <p>Traditional</p>
+                            
+                        </div>
+                        <div class="items w-250">
+                            <img src="./picture/food.jpg">
+                            <p>Food</p>
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <div class="article">
+                    <div>
+                        <h2 class="font-color h-center">THÀNH PHỐ ĐÀ NẴNG - Fantasti City!</h2>
+                        <a>Du lịch Đà Nẵng luôn là sự lựa chọn hàng đầu của các tín đồ mê xê dịch không chỉ bởi cảnh sắc, khí hậu, con người,.. mà đây còn là vùng đất hội tụ rất nhiều cảnh đẹp độc nhất và tinh hoa ẩm thực.</a>        
+                    </div>
+                    
+                    <div class="form-group" >
+                        <a>
+                            <i class="fa-regular fa-clipboard"></i>
+                            <p>Bạn có thích Đà Nẵng không?</p>
+                        </a>
+                        <select class="form-control">
+                            <option>Thích, rất mong muốn tới Đà Nẵng du lịch</option>
+                            <option>Bình thường</option>
+                            <option>Tôi không thích Đà Nẵng</option>
+                            
+                        </select>
+                    </div>
+                    <div >
+                        <h4 id="item1" class="font-color">1. Giới thiệu về Đà Nẵng</h4>
+                        <a>Thành phố Đà Nẵng City là thành phố lớn đứng thứ 4 ở Việt Nam sau thành phố Hồ Chí Minh, thủ đô Hà Nội và Tp. Hải Phòng về đô thị hóa & tiềm lực phát triển kinh tế. Tp. Đà Nẵng là đô thị loại I và là 1 trong 5 thành phố trực thuộc trung ương của Việt Nam. Đà Nẵng trong mắt của người Việt Nam là một thành phố du lịch biển xanh - sạch - đẹp, và nơi đáng sống, là mơ ước của nhiều người. TP. Đà Nẵng cũng nằm trong danh sách Top 10 địa điểm nổi tiếng đẹp nhất Việt Nam</a>
+                    </div>
+                    <div >
+                        <h4 id="item2" class="font-color">2. Thời điểm du lịch Đà Nẵng thích hợp nhất?</h4>
+                        <ul>
+                            <li>Đà Nẵng có vị trí nằm tại miền Trung, mang những nét đặc trưng của kiểu khí hậu nhiệt đới với 2 mùa rõ rệt là mùa khô và mùa mưa. Mùa khô kéo dài từ tháng 1 đến tháng 7 hằng năm, sau đó Đà Nẵng bắt đầu bước vào mùa mưa và thường xuyên có bão.</li><br>
+                            <li>Trên thực tế, mỗi mùa tại Đà Nẵng đều mang nét đẹp riêng để bạn khám phá. Du lịch Đà Nẵng mùa khô từ tháng 1 đến tháng 7, thời tiết không chỉ đẹp, thích hợp để ngắm cảnh, mà đây cũng là thời gian Đà Nẵng có rất nhiều lễ hội hấp dẫn như lễ hội bắn pháo hoa, lễ hội Quan Thế Âm, lễ hội đua thuyền,... </li><br>
+                            <li>Nếu bạn muốn thử cảm giác mới lạ du lịch Đà Nẵng mùa mưa thì cũng không có gì quá đáng ngại cả. Vẻ đẹp trầm mặc hơn và những cơn mưa rả rích sẽ là một trải nghiệm thú vị. Đặc biệt nằm ngoài mùa cao điểm nên nhiều dịch vụ vui chơi, tham quan, khách sạn cũng rẻ hơn, tiết kiệm tương đối cho túi tiền. Tuy nhiên, bạn cần nghiên cứu kỹ thời tiết, chuẩn bị đồ kỹ càng.</li><br>
+                        
+                        </ul>
+                        <img src="./picture/tonight.jpg">
+                    </div>
+                    <div >
+                        <h4 id="item3" class="font-color">3. Cần chuẩn bị gì khi đi du lịch Đà Nẵng?</h4>
+                        <a>Để chuẩn bị đồ nhanh chóng và không bỏ quên bất kỳ vật dụng quan trọng nào, bạn có thể tham khảo 5 nhóm vật dụng chính sau đây:</a><br>
+                        <ul>
+                            <li>Giấy tờ: các loại giấy tờ tùy thân như CMND, CCCD, vé máy bay, vé tàu xe...</li><br>
+                            <li>Tiền: sử dụng thẻ ATM sẽ giúp đảm bảo an toàn khi đi du lịch, tuy nhiên bạn cũng nên đem theo một chút tiền mặt để chi trả cho các dịch vụ, hoạt động mua sắm, ăn uống... khi cần thiết.</li><br>
+                            <li>Quần áo: phần đông du khách đến Đà Nẵng du lịch đều vào mùa hè khi có thời tiết nắng nóng nhất nên nếu có ý định đi vào mùa này, bạn nên mang theo quần áo rộng, thoáng mát,... đặc biệt là những chiếc váy maxi, bikini để tha hồ thả dáng trên biển. Bên cạnh đó, bạn nên mang kèm theo một số phụ kiện chống nắng như mũ, kính, ô... đề phòng thay đổi thời tiết.</li><br>
+                            <li>Phụ kiện điện tử: chuyến đi của bạn chắc chắn không thể thiếu điện thoại di động, sạc, tai nghe hay máy ảnh... để ghi lại những khoảnh khắc đáng nhớ rồi.</li><br>
+                            <li>Mỹ phẩm: bạn có thể sử dụng các bình chiết nhỏ để đem theo sữa rửa mặt, tẩy trang, kem chống nắng, kem dưỡng, dầu gội... để tiết kiệm diện tích và cân nặng cho hành lý.</li><br>
+                            <li>Đồ dùng y tế: để an tâm và chủ động trong chuyến đi, bạn có thể chuẩn bị sẵn một số loại thuốc thông dụng như cảm cúm, ho, thuốc do đường tiêu hóa và thuốc chống say tàu xe.</li><br>
+                    
+                        </ul>
+                        <figure>
+                            <img src="./picture/vali.jpg"><br>
+                            <figurecaption>Chuẩn bị đồ du lịch Đà Nẵng gọn nhẹ, thuận tiện cho chuyến đi. </figurecaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <h4 id="item4" class="font-color">4. Các phương tiện du lịch Đà Nẵng</h4>
+                        <a>Vì là vùng đất miền Trung nên du lịch Đà Nẵng có rất nhiều phương tiện để bạn lựa chọn. Tùy theo vị trí bạn ở đâu có thể lựa chọn hình thức di chuyển khác nhau như: </a>
+                        <ul>
+                            <li>Máy bay: hình thức phổ biến nhất được nhiều du khách lựa chọn khi đi du lịch Đà Nẵng là máy bay bởi sự tiện lợi, nhanh và tiết kiệm thời gian. Tuy nhiên nếu bạn lựa chọn hình thức này thì nên đặt vé trước ít nhất 1-2 tháng để săn được vé rẻ, giúp tiết kiệm cho chuyến đi. </li>
+                            <li>Xe khách: hiện nay có rất nhiều hãng xe khách từ ghế ngồi đến giường nằm chạy tuyến Bắc- Nam để phục vụ nhu cầu đi lại của du khách. Nếu bạn muốn có một chuyến đi tiết kiệm thì có thể lựa chọn xe khách với giá dao động từ 250.000 - 500.000 đồng. </li>
+                            <li>Tàu hỏa: đây là cách được khá nhiều bạn trẻ lựa chọn bởi di chuyển bằng tàu hỏa vừa nhanh hơn xe khách lại có thể ngắm được cảnh suốt chuyến đi. Đặc biệt, nếu lịch trình của bạn có ghé qua Huế thì tàu hỏa là sự lựa chọn khá hợp lý bởi bạn hoàn toàn có thể xuống ở ga Huế rồi mới di chuyển tiếp đến Đà Nẵng. </li>
+                            <figure>
+                                <img src="./picture/tau.jpg"><br>
+                                <figurecaption>Tàu hỏa hiện đang là phương tiện di chuyển được khá nhiều bạn trẻ lựa chọn khi đi du lịch Đà Nẵng</figurecaption>
+                            </figure>
+                            <li>Xe máy: Với các bạn trẻ thì du lịch Đà Nẵng bằng xe máy là phương tiện phổ biến bởi vừa tiết kiệm chi phí lại có thể chủ động được thời gian, địa điểm đến. Nếu bạn tự tin vào khả năng tìm đường của mình thì vừa vi vu trên chiếc xe máy vừa khám phá thành phố cũng là lựa chọn thú vị. </li>
+                            <figure>
+                                <img src="./picture/xemay.jpg"><br>
+                                <figurecaption>Du lịch Đà Nẵng bằng xe máy để trải nghiệm những cung đường đẹp nhất Đà Nẵng</figurecaption>
+                            </figure>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="s-w-30 ">
+                <p class="font-color">MỤC LỤC</p>
+                <div class="list-group">
+                    <a class="list-group-item item-left " href="#item1">1. Giới Thiệu về Đà Nẵng </a>
+                    <a class="list-group-item item-left" href="#item2">2. Thời điểm du lịch Đà Nẵng thích hợp nhất</a>
+                    <a class="list-group-item item-left" href="#item3">3. Cần chuẩn bị gì khi đi du lịch Đà Nẵng</a>
+                    <a class="list-group-item item-left" href="#item4">4. Các phương tiện du lịch Đà Nẵng</a>
+                </div>
+                
+                <div class="info ">
+                    <img class="photo" src="./picture/cauvang.jpg">
+                    <div>
+                        <p>Một số thông tin liên quan</p>
+                        <ul>
+                            <li><a href="">Thăm chùa Bà Thiên Hậu: Biểu tượng ĐẸP trong văn hóa tâm linh.</a></li>
+                            <li><a href="">Ngũ Hành Sơn Đà Nẵng - “Nam Thiên Danh Thắng” trứ danh.</a></li>
+                            <li><a href="">Khám phá các món đặc sản làm nên tinh hoa ẩm thực Đà Nẵng.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <br>
+            <br>
+            <div class="font-footer">
+               <div class="colum">
+                    <h3>Về chúng tôi</h3>
+                    <p>Giới thiệu</p>
+                    <p>An toàn-Bảo mật</p>
+                    <p>Điều khoản điều lệ</p>
+                    <p>Chính sách quyền riêng tư</p>
+                    <p>Blog</p>
+                    <p>Liên hệ</p>
+                    <p>Hỏi đáp</p>
+                </div>
+               <div class="colum"> 
+                    <h3>Dịch vụ nổi bật</h3>
+                    <p>Đặt khách sạn</p>
+                    <p>Vé máy bay</p>
+                    <p>Vay nhanh</p>
+               </div>
+               <div class="colum"> 
+                    <h3>Chăm sóc khách hàng</h3>
+                    <p>Địa chỉ: Đức Thắng, Hà Nội</p>
+                    <p>Hotline: 000000000 (1000 đ/phút)</p>
+                    <p>Email: xxx@gmai.com</p>
+                    <p>Tổng tài gọi ra:098xxx-xxx789xx</p>
+               </div>
+               <div class="colum">
+                    <h3>Hợp tác doanh nghiệp</h3>
+                    <p>Hotline:00xxx456</p>
+                    <p>Email:xxx@gmail.com</p>
+                    <p>Website:woderlan.vn</p>
+                    <img style="width:100%" src="./picture/htdn.png" alt="">
+                 </div>
+                <div class="colum">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <img style="width:15%" src="./picture/fb.png" alt="anh">
+                    <img style="width:15%" src="./picture/ig.png" alt="">
+                    <img style="width:15%" src="./picture/youtube.png">
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Tải ứng dụng trên điện thoại</h3>
+                    <img style="width:100%" src="./picture/tai_nd.png" alt="">
+                    <img style="width:100%" src="./picture/download.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
